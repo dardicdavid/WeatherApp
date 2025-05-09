@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,23 +6,59 @@
         <title>WeatherApp</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
     </head>
     <body>
-        <div>
-            <h1>WeatherApp</h1>
+        <div class="wrapper">
+            <div class="city_container">
+                <form>
+                    <input type="text" placeholder="Enter City Name" id="city_input">
+                </form>
+            </div>
+            <div class="title">
+                <h1 class="city-country">City, Country</h1>
+                <p class="date">Date</p>
+            </div>
+            <div class="weather-container">
+                <div class="temperature">
+                    <span id="current-weather-image" class="material-symbols-outlined">cloud</span>
+                    <span class="temp-value">21</span>
+                    <span class="temp-unit">°</span>
+                    <p>Conditions</p>
+                </div>
+                <div class="weather-details">
+                    <div>
+                        <span class="temp-max-value">23</span>
+                        <span class="temp-unit">°</span>
+                        <p>High</p>
+                    </div>
+                    <div>
+                        <span class="wind-speed">7</span>
+                        <span class="wind-unit">mp/h</span>
+                        <p>Wind</p>
+                    </div>
+                    <div>
+                        <span class="sunrise">05:27</span>
+                        <p>Sunrise</p>
+                    </div>
+                    <div>
+                        <span class="temp-min-value">14</span>
+                        <span class="temp-unit">°</span>
+                        <p>Low</p>
+                    </div>
+                    <div>
+                        <span class="rain-chance">0%</span>
+                        <p>Rain</p>
+                    </div>
+                    <div>
+                        <span class="sunset">20:57</span>
+                        <p>Sunset</p>
+                    </div>
+                </div>
+            </div>
+            <div><p>Following week</p></div>
+            <div></div>
         </div>
-
-        <div>
-            <input type="text"
-            id="city_search"
-            name="search"
-            placeholder="Enter City"/>
-        </div>
-        <div class="weather_details">
-
-        </div>
-        
-        <script src="" async defer></script>
     </body>
 </html>
