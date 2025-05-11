@@ -70,3 +70,4 @@ C:\Users\David\source\repos\WeatherApp\WeatherApp\WeatherApp\obj\Debug\net8.0\re
 C:\Users\David\source\repos\WeatherApp\WeatherApp\WeatherApp\obj\Debug\net8.0\WeatherApp.pdb
 C:\Users\David\source\repos\WeatherApp\WeatherApp\WeatherApp\obj\Debug\net8.0\WeatherApp.genruntimeconfig.cache
 C:\Users\David\source\repos\WeatherApp\WeatherApp\WeatherApp\obj\Debug\net8.0\ref\WeatherApp.dll
+C:\Users\David\source\repos\WeatherApp\WeatherApp\WeatherApp\bin\Debug\net8.0\AutoMapper.dll
