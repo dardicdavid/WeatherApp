@@ -1,6 +1,6 @@
 
 
-*:not(#city_country, .material-symbols-outlined, #details_lower, #city_input){
+*:not(#city, .material-symbols-outlined, #details_lower, #city_input){
     font-family: Inter, sans-serif, Arial;
     font-size: 20px;
     color: white;
@@ -20,11 +20,14 @@
 }
 
 #wrapper{
-    /*background-color: red;*/
-    width: 1500px;
+    width: 60%;
     background-image: linear-gradient(to bottom right, dodgerblue, cornflowerblue);
-    height: 80%;
+    max-height: 80%;
     border-radius: 10px;
+}
+
+#weather_div{
+    visibility: collapse;
 }
 
 #input_div{
@@ -49,10 +52,11 @@
     flex-direction: column;
     /*background-color: yellow;*/
 
-    #city_country{
+    #city{
         display: flex;
         justify-content: center;
         margin-bottom: 0;
+        text-transform: capitalize;
     }
 
     #date{
@@ -89,10 +93,16 @@
             justify-content: center;
             align-items: center;
 
-            #current_weather_image{
-                font-size: 250px;
-                /*color: white;*/
+            /*#current_weather_image{*/
+            /*    font-size: 250px;*/
+            /*    !*color: white;*!*/
+            /*}*/
+
+            .material-symbols-outlined.day{
+                font-size: 250px
             }
+
+
         }
 
         #temperature_div{
@@ -138,17 +148,17 @@
             }
 
             #temperature_high_div{
-                width: 150px;
+                width: 170px;
                 /*background-color: red;*/
             }
 
             #wind_div{
-                width: 150px;
+                width: 170px;
                 /*background-color: blue;*/
             }
 
             #sunrise_div{
-                width: 150px;
+                width: 170px;
                 /*background-color: red;*/
             }
 
@@ -163,17 +173,17 @@
             }
 
             #temperature_low_div{
-                width: 150px;
+                width: 170px;
                 /*background-color: blue;*/
             }
 
             #rain_div{
-                width: 150px;
+                width: 170px;
                 /*background-color: red;*/
             }
 
             #sunset_div{
-                width: 150px;
+                width: 170px;
                 /*background-color: blue;*/
             }
         }
@@ -182,103 +192,138 @@
 
 }
 
+#fw_div{
+    margin-top: 50px;
+    margin-left: 20px;
+}
 
+.material-symbols-outlined.card_image{
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
 
 
 #next_week_cards_div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding-bottom: 15px;
 
-    *:not(#card_three_div) {
-        margin-right: 20px;
-        margin-left: 20px;
-    }
 
     .card {
         background-image: linear-gradient(to bottom right, #0083ff, cornflowerblue);
         border-radius: 15px;
-        width: 500px;
+        width: 200px;
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-evenly;
+        max-height: 200px;
+        height: 200px;
+        margin: 10px;
     }
+
+    .dow_data{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .min_temp{
+        padding-right: 5px;
+    }
+    .max_temp{
+        padding-left: 5px;
+    }
+    /*#card_image_1{*/
+    /*    font-size: 70px;*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*}*/
+
+
+        /*#card_one_div{*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    background-color: blue;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    align-content: space-evenly;*/
+    /*    max-height: 250px;*/
+
+
+
+
+    /*    *{*/
+    /*        margin: 10px;*/
+    /*    }*/
+
+
+
+
+    /*    #dow_one_image{*/
+    /*        font-size: 100px;*/
+    /*    }*/
+
+    /*    #dow_one_minmax{*/
+    /*        display: flex;*/
+    /*        flex-direction: row;*/
+    /*    }*/
+    /*}*/
+
+    /*#card_two_div{*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    background-color: blue;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    align-content: space-evenly;*/
+    /*    max-height: 250px;*/
+    /*    *{*/
+    /*        margin: 10px;*/
+    /*    }*/
+
+
+    /*    #dow_two_image{*/
+    /*        font-size: 100px;*/
+    /*    }*/
+
+    /*    #dow_two_minmax{*/
+    /*        display: flex;*/
+    /*        flex-direction: row;*/
+    /*    }*/
+    /*}*/
+
+    /*#card_three_div{*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    background-color: blue;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    align-content: space-evenly;*/
+    /*    max-height: 250px;*/
+
+    /*    *{*/
+    /*        margin: 10px;*/
+    /*    }*/
+
+
+    /*    #dow_three_image{*/
+    /*        font-size: 100px;*/
+    /*    }*/
+
+    /*    #dow_three_minmax{*/
+    /*        display: flex;*/
+    /*        flex-direction: row;*/
+    /*    }*/
+    /*}*/
 }
-
-/*    #card_one_div{*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        background-color: blue;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*        align-content: space-evenly;*/
-/*        max-height: 250px;*/
-
-
-
-
-/*        *{*/
-/*            margin: 10px;*/
-/*        }*/
-
-
-
-
-/*        #dow_one_image{*/
-/*            font-size: 100px;*/
-/*        }*/
-
-/*        #dow_one_minmax{*/
-/*            display: flex;*/
-/*            flex-direction: row;*/
-/*        }*/
-/*    }*/
-
-/*    #card_two_div{*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        background-color: blue;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*        align-content: space-evenly;*/
-/*        max-height: 250px;*/
-/*        *{*/
-/*            margin: 10px;*/
-/*        }*/
-
-
-/*        #dow_two_image{*/
-/*            font-size: 100px;*/
-/*        }*/
-
-/*        #dow_two_minmax{*/
-/*            display: flex;*/
-/*            flex-direction: row;*/
-/*        }*/
-/*    }*/
-
-/*    #card_three_div{*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        background-color: blue;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*        align-content: space-evenly;*/
-/*        max-height: 250px;*/
-
-/*        *{*/
-/*            margin: 10px;*/
-/*        }*/
-
-
-/*        #dow_three_image{*/
-/*            font-size: 100px;*/
-/*        }*/
-
-/*        #dow_three_minmax{*/
-/*            display: flex;*/
-/*            flex-direction: row;*/
-/*        }*/
-/*    }*/
-/*}*/
 
 
 

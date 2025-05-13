@@ -47,8 +47,7 @@ public static class WeatherClient
                 Console.WriteLine("Cache accessed.");
                 return Results.Ok(cacheModel);
             }
-            
-            var response = await _httpClient.GetFromJsonAsync<WeatherResponse?>($"{location}?key={WeatherAPIKey}");
+            var response = await _httpClient.GetFromJsonAsync<WeatherResponse?>($"{location}?unitGroup=metric&key={WeatherAPIKey}");
             
 
             if (response is null)
@@ -78,7 +77,7 @@ public static class WeatherClient
             
             DateTime dateTime = DateTime.Today;
             string date = dateTime.ToString("yyyy-MM-dd");
-            var response = await _httpClient.GetFromJsonAsync<WeatherResponse>($"{location}/{date}?key={WeatherAPIKey}");
+            var response = await _httpClient.GetFromJsonAsync<WeatherResponse>($"{location}/{date}?unitGroup=metric&key={WeatherAPIKey}");
             
             if (response is null)
             {
@@ -104,7 +103,7 @@ public static class WeatherClient
                 return Results.Ok(cacheModel);
             }
             
-            var response = await _httpClient.GetFromJsonAsync<WeatherResponse?>($"{location}/{date1}/{date2}?key={WeatherAPIKey}");
+            var response = await _httpClient.GetFromJsonAsync<WeatherResponse?>($"{location}/{date1}/{date2}?unitGroup=metric&key={WeatherAPIKey}");
             
             if (response is null)
             {

@@ -11,112 +11,85 @@
     </head>
     <body id="body">
         <div id="wrapper">
+
+
             <div id="input_div">
                 <label for="city_input"></label><input type="text" placeholder="Enter City Name" id="city_input">
             </div>
 
-            <div id="title">
-                <h1 id="city_country">City, Country</h1>
-                <p id="date">Date</p>
-            </div>
 
-            <div id="current_weather_div">
+            <div id="weather_div">
 
-                <div id="weather_main_div">
+                <div id="title">
+                    <h1 id="city">City, Country</h1>
+                    <p id="date">Date</p>
+                </div>
 
-                    <div id="current_weather_image_div">
-                        <span id="current_weather_image" class="material-symbols-outlined">sunny</span>
+                <div id="current_weather_div">
+
+                    <div id="weather_main_div">
+
+                        <div id="current_weather_image_div">
+                            <span id="current_weather_image" class="material-symbols-outlined day">sunny</span>
+                        </div>
+
+                        <div id="temperature_div">
+                            <p id="temperature">21°</p>
+                            <p id="condition">Sunny</p>
+                        </div>
                     </div>
 
-                    <div id="temperature_div">
-                        <p id="temperature">21°</p>
-                        <p id="condition">Sunny</p>
+                    <hr id="divider">
+
+                    <div id="weather_details_div">
+
+                        <div id="details_upper">
+                            <div id="temperature_high_div">
+                                <p id="temperature_high">23°</p>
+                                <p>High</p>
+                            </div>
+
+                            <div id="wind_div">
+                                <p id="wind">7mp/h</p>
+                                <p>Wind</p>
+                            </div>
+
+                            <div id="sunrise_div">
+                                <p id="sunrise">05:27</p>
+                                <p>Sunrise</p>
+                            </div>
+                        </div>
+
+                        <div id="details_lower">
+                            <div id="temperature_low_div">
+                                <p id="temperature_low">14°</p>
+                                <p>Low</p>
+                            </div>
+
+                            <div id="rain_div">
+                                <p id="rain_chance">0%</p>
+                                <p>Rain</p>
+                            </div>
+
+                            <div id="sunset_div">
+                                <p id="sunset">20:57</p>
+                                <p>Sunset</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <hr id="divider">
-
-                <div id="weather_details_div">
-
-                    <div id="details_upper">
-                        <div id="temperature_high_div">
-                            <p>23°</p>
-                            <p>High</p>
-                        </div>
-
-                        <div id="wind_div">
-                            <p>7mp/h</p>
-                            <p>Wind</p>
-                        </div>
-
-                        <div id="sunrise_div">
-                            <p>05:27</p>
-                            <p>Sunrise</p>
-                        </div>
-                    </div>
-
-                    <div id="details_lower">
-                        <div id="temperature_low_div">
-                            <p>14°</p>
-                            <p>Low</p>
-                        </div>
-
-                        <div id="rain_div">
-                            <p>0%</p>
-                            <p>Rain</p>
-                        </div>
-
-                        <div id="sunset_div">
-                            <p>20:57</p>
-                            <p>Sunset</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
                 <div>
-                    <p>Following week</p>
-                </div>
-
-                <div id="next_week_cards_div">
-                    <div id="card_one_div" class="card">
-                        <p>DOW</p>
-                        <p id="dow_one_image" class="material-symbols-outlined">sunny</p>
-                        <div id="dow_one_minmax">
-                            <p>6°</p>
-                            <p>|</p>
-                            <p>20°</p>
-                        </div>
+                    <div id="fw_div">
+                        <p>Following week</p>
                     </div>
 
-                    <div id="card_two_div" class="card">
-                        <p>DOW</p>
-                        <p id="dow_two_image" class="material-symbols-outlined">sunny</p>
-                        <div id="dow_two_minmax">
-                            <p>6°</p>
-                            <p>|</p>
-                            <p>20°</p>
-                        </div>
-                    </div>
-
-                    <div id="card_three_div" class="card">
-                        <p>DOW</p>
-                        <p id="dow_three_image" class="material-symbols-outlined">sunny</p>
-                        <div id="dow_three_minmax">
-                            <p>6°</p>
-                            <p>|</p>
-                            <p>20°</p>
-                        </div>
-                    </div>
+                    <div id="next_week_cards_div"> </div>
 
 
                 </div>
-
 
             </div>
-
-
 
 
         </div>
