@@ -202,7 +202,8 @@
 
 
     .card {
-        background-image: linear-gradient(to bottom right, #0083ff, cornflowerblue);
+        background-image: radial-gradient(#70b7ff, #4d9af2);
+
         border-radius: 15px;
         width: 200px;
         flex: 0 0 auto;
