@@ -35,7 +35,6 @@
     justify-content: center;
     padding-bottom: 30px;
     padding-top: 30px;
-    /*background-color: white;*/
 
     #city_input{
         display: flex;
@@ -45,12 +44,12 @@
     }
 
 }
-/*TITLE*/
+
+
 #title{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /*background-color: yellow;*/
 
     #city{
         display: flex;
@@ -67,13 +66,11 @@
 }
 
 
-/*WEATHER TODAY*/
 
 #current_weather_div{
     display: flex;
     flex-direction: row;
     height: 250px;
-    /*background-color: white;*/
     justify-content: space-evenly;
     align-items: center;
 
@@ -84,7 +81,6 @@
 
     #weather_main_div{
         display: flex;
-        /*background-color: purple;*/
         justify-content: space-evenly;
         width: 50%;
 
@@ -93,10 +89,6 @@
             justify-content: center;
             align-items: center;
 
-            /*#current_weather_image{*/
-            /*    font-size: 250px;*/
-            /*    !*color: white;*!*/
-            /*}*/
 
             .material-symbols-outlined.day{
                 font-size: 250px
@@ -149,17 +141,14 @@
 
             #temperature_high_div{
                 width: 170px;
-                /*background-color: red;*/
             }
 
             #wind_div{
                 width: 170px;
-                /*background-color: blue;*/
             }
 
             #sunrise_div{
                 width: 170px;
-                /*background-color: red;*/
             }
 
         }
@@ -174,17 +163,14 @@
 
             #temperature_low_div{
                 width: 170px;
-                /*background-color: blue;*/
             }
 
             #rain_div{
                 width: 170px;
-                /*background-color: red;*/
             }
 
             #sunset_div{
                 width: 170px;
-                /*background-color: blue;*/
             }
         }
 
@@ -241,88 +227,7 @@
     .max_temp{
         padding-left: 5px;
     }
-    /*#card_image_1{*/
-    /*    font-size: 70px;*/
-    /*    margin: 0;*/
-    /*    padding: 0;*/
-    /*}*/
 
-
-        /*#card_one_div{*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    background-color: blue;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*    align-content: space-evenly;*/
-    /*    max-height: 250px;*/
-
-
-
-
-    /*    *{*/
-    /*        margin: 10px;*/
-    /*    }*/
-
-
-
-
-    /*    #dow_one_image{*/
-    /*        font-size: 100px;*/
-    /*    }*/
-
-    /*    #dow_one_minmax{*/
-    /*        display: flex;*/
-    /*        flex-direction: row;*/
-    /*    }*/
-    /*}*/
-
-    /*#card_two_div{*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    background-color: blue;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*    align-content: space-evenly;*/
-    /*    max-height: 250px;*/
-    /*    *{*/
-    /*        margin: 10px;*/
-    /*    }*/
-
-
-    /*    #dow_two_image{*/
-    /*        font-size: 100px;*/
-    /*    }*/
-
-    /*    #dow_two_minmax{*/
-    /*        display: flex;*/
-    /*        flex-direction: row;*/
-    /*    }*/
-    /*}*/
-
-    /*#card_three_div{*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    background-color: blue;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*    align-content: space-evenly;*/
-    /*    max-height: 250px;*/
-
-    /*    *{*/
-    /*        margin: 10px;*/
-    /*    }*/
-
-
-    /*    #dow_three_image{*/
-    /*        font-size: 100px;*/
-    /*    }*/
-
-    /*    #dow_three_minmax{*/
-    /*        display: flex;*/
-    /*        flex-direction: row;*/
-    /*    }*/
-    /*}*/
 }
 
 

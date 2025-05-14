@@ -103,9 +103,6 @@ function createCard(data){
         document.getElementById(min_temp_i).textContent = data.days[i].tempmin + "°";
         document.getElementById(max_temp_i).textContent = data.days[i].tempmax + "°";
 
-        // document.getElementById(card_image_i).style.margin = "0";
-        // document.getElementById(card_image_i).style.padding = "0";
-        // document.getElementById(card_image_i).style.fontSize = "70px";
 
         changeIcon(data.days[i].icon ,card_image_i);
 

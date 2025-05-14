@@ -18,7 +18,7 @@ public static class WeatherClient
     
     private static MemoryCacheEntryOptions cacheOptions = new MemoryCacheEntryOptions()
         .SetAbsoluteExpiration(TimeSpan.FromMinutes(30))
-        .SetSize(20)
+        .SetSize(50)
         .SetSlidingExpiration(TimeSpan.FromMinutes(5));
     
     
@@ -77,6 +77,7 @@ public static class WeatherClient
             
             DateTime dateTime = DateTime.Today;
             string date = dateTime.ToString("yyyy-MM-dd");
+            
             var response = await _httpClient.GetFromJsonAsync<WeatherResponse>($"{location}/{date}?unitGroup=metric&key={WeatherAPIKey}");
             
             if (response is null)
