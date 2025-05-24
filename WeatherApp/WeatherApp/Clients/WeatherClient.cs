@@ -7,7 +7,7 @@ namespace WeatherApp.Clients;
 public static class WeatherClient
 {
     
-    private static string WeatherAPIKey = "6NRGHP3EHP5Q2GEBJ2WLT39J2";
+    private static string WeatherAPIKey = "";
     
     private static readonly HttpClient _httpClient = new()
     {
